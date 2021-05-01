@@ -1,3 +1,6 @@
-export default function Home({ orders }) {}
+export { Orders as default } from '../components'
 
-export function getServerSideProps() {}
+export function getServerSideProps() {
+  const orders = require('../orders.json')
+  return { props: { orders } }
+}
