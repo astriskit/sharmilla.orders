@@ -8,8 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "@date-io/date-fns": "1.x",
     "@material-ui/core": "^4.11.4",
     "@material-ui/data-grid": "^4.0.0-alpha.27",
+    "@material-ui/pickers": "^3.3.10",
     "date-fns": "^2.21.1",
     "next": "10.2.0",
     "react": "17.0.2",

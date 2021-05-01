@@ -1,5 +1,28 @@
 .orders {
+  .header {
+    height: 20vh;
+    .headerContent {
+      justify-content: space-around;
+      & > * {
+        margin: 4px;
+      }
+      @media screen and (min-width: 768px) {
+        & > :first-child {
+          max-width: 50%;
+          flex-wrap: wrap;
+        }
+        justify-content: inital;
+      }
+    }
+  }
   .list {
     height: 80vh;
+  }
+  :global(.MuiChip-root) {
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      min-width: 80px;
+      margin: 2px;
+    }
   }
 }
